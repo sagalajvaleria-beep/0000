@@ -1,53 +1,47 @@
 # WRAPT STUDIO — website
 
-A static multi-page website for the Wrapt Studio packaging design and production concept.
+Статичний багатосторінковий сайт для бізнес-ідеї Wrapt Studio. Побудований на HTML, CSS та JavaScript без фреймворків.
 
-## Pages
+## Структура
+- `index.html` — головна сторінка
+- `about.html` — про студію
+- `services.html` — послуги та пакети
+- `products.html` — категорії продукції
+- `materials.html` — матеріали та інтерактивний підбір
+- `portfolio.html` — портфоліо з фільтрами
+- `process.html` — етапи роботи
+- `contact.html` — демонстраційна форма заявки
+- `styles.css`, `script.js` — стилі та інтерактивність
 
-- `index.html` — home page
-- `about.html` — about the studio
-- `services.html` — services and collaboration formats
-- `products.html` — packaging categories and interactive product selector
-- `materials.html` — material library
-- `portfolio.html` — conceptual portfolio with category filters
-- `process.html` — project workflow
-- `contact.html` — project brief form (front-end demonstration only)
+## Перегляд локально
+Відкрийте `index.html` у браузері. Для локального сервера можна скористатися розширенням Live Server у VS Code.
 
-## Technology
+## Публікація на GitHub Pages
+1. Створіть новий GitHub repository.
+2. Завантажте в корінь репозиторію всі файли та папки з цього архіву.
+3. Відкрийте **Settings → Pages**.
+4. У розділі **Build and deployment** виберіть **Deploy from a branch**.
+5. Виберіть гілку `main` і папку `/ (root)`, натисніть **Save**.
+6. Через кілька хвилин GitHub Pages надасть адресу сайту.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No framework, build step, or package installation required
+У репозиторії також є workflow `.github/workflows/pages.yml` для автоматичного розгортання GitHub Pages.
 
-## Run locally
+## Важливо перед публікацією
+- Форма на сторінці контактів демонстраційна: вона не надсилає дані. Для реальних заявок потрібно підключити backend, Formspree, Netlify Forms або CRM.
+- Зображення підключені як зовнішні стокові зображення Unsplash і потребують доступу до інтернету.
+- Портфоліо позначене як візуальні референси, а не як підтверджені реалізовані кейси Wrapt Studio.
+- У футері зазначено авторство: **© 2026 Сагалай Валерія**, авторський e-mail та англомовний підпис.
+- Мовний перемикач UA/EN працює на всіх сторінках. Вибір мови зберігається в браузері.
+- Макет має базові правила для менших екранів, хоча окреме налаштування адаптивності не було пріоритетом цієї версії.
 
-Open `index.html` in a browser. For a local development server, run one of these commands from the project directory:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Publish with GitHub Pages
-
-1. Create a new repository on GitHub, for example `wrapt-studio`.
-2. Upload all files and folders from this project to the repository root. Keep the `assets` folder in the same location as the HTML files.
-3. Open **Settings → Pages** in the repository.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)` folder, then save.
-6. Wait for GitHub Pages to publish the site. The public URL will appear in the Pages settings.
-
-## Important notes before publishing
-
-- The contact form is intentionally a demo: it validates the fields and displays a confirmation in the browser, but it does not send or store submissions. Connect a form service or backend before using it to receive real client enquiries.
-- The hero image is AI-generated; the portfolio also includes CSS-based conceptual mockups. These visuals are not evidence of completed customer projects. Replace or supplement them with approved real project photographs when available.
-- The layout is currently desktop-first and does not include dedicated mobile/tablet responsive optimization, as requested for this first version.
-- The email address in the footer and contact section is the author contact supplied for this project.
-- The language toggle switches between Ukrainian and English. The selected language is remembered in the browser.
-
-## Project authorship
-
-© 2026 Сагалай Валерія. Усі права захищені.
+## Авторство
 Website designed and developed by Valeriia Sagalay.
+
+
+## Візуальні матеріали
+
+Зображення в `assets/` — це референси, надані власницею концепції, і вони використані для демонстрації бажаного напряму дизайну пакування. Вони не заявляються як реалізовані клієнтські проєкти Wrapt Studio.
+
+
+## Візуальні матеріали
+У цій версії замість надісланих користувачем мудбордів використано окремі фотографії пакування з відкритих вебджерел. Вони є ілюстративними референсами, а не роботами Wrapt Studio. Перед публічним комерційним запуском слід перевірити та оформити права на використання кожного зображення або замінити їх на власні/ліцензовані фотографії.
